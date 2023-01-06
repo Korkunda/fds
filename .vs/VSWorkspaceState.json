@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Characters",
+    "\\Characters\\Mob",
+    "\\Characters\\Mob\\Mobs",
+    "\\Characters\\Moves",
+    "\\Characters\\Player",
+    "\\Game",
+    "\\Game\\BattleEngineComponents",
+    "\\Game\\Events",
+    "\\Game\\Generators"
+  ],
+  "SelectedNode": "\\Script Print.sln",
+  "PreviewInSolutionExplorer": false
+}

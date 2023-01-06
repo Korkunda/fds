@@ -1,0 +1,33 @@
+{
+  "Mobs":[
+    {
+      "Name": "Jelly",
+      "Stats": {
+        "Health": 5,
+        "Attack": 2,
+        "Speed": 1
+      },
+      "Moveset": {
+        "Move1": 1,
+        "Move2": null,
+        "Move3": null,
+        "Move4": null
+      }
+    },
+    {
+      "Name": "Spider",
+      "Stats": {
+        "Health": 3,
+        "Attack": 3,
+        "Speed": 5
+      },
+      "Moveset": {
+        "Move1": 1,
+        "Move2": null,
+        "Move3": null,
+        "Move4": null
+      }
+    }
+
+  ]
+}

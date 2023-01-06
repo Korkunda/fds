@@ -1,0 +1,25 @@
+{
+  "Moves": [
+    {
+      "Id": 1,
+      "Name": "Tackle",
+      "Type": "attack",
+      "Damage": 1,
+      "Accuracy": 100
+    },
+    {
+      "Id": 2,
+      "Name": "Suicide",
+      "Type": "heal",
+      "Damage": -9999,
+      "Accuracy": 100
+    },
+    {
+      "Id": 3,
+      "Name": "Bite",
+      "Type": "attack",
+      "Damage": 2,
+      "Accuracy": 100
+    }
+  ]
+}

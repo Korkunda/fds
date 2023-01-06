@@ -1,0 +1,32 @@
+C:\Users\JaredP\source\repos\Script Print\Script Print\bin\Debug\net6.0\Script Print.exe
+C:\Users\JaredP\source\repos\Script Print\Script Print\bin\Debug\net6.0\Script Print.deps.json
+C:\Users\JaredP\source\repos\Script Print\Script Print\bin\Debug\net6.0\Script Print.runtimeconfig.json
+C:\Users\JaredP\source\repos\Script Print\Script Print\bin\Debug\net6.0\Script Print.dll
+C:\Users\JaredP\source\repos\Script Print\Script Print\bin\Debug\net6.0\Script Print.pdb
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.csproj.AssemblyReference.cache
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.AssemblyInfoInputs.cache
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.AssemblyInfo.cs
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.csproj.CoreCompileInputs.cache
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.dll
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\refint\Script Print.dll
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.pdb
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\Script Print.genruntimeconfig.cache
+C:\Users\JaredP\source\repos\Script Print\Script Print\obj\Debug\net6.0\ref\Script Print.dll
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.csproj.AssemblyReference.cache
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.AssemblyInfoInputs.cache
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.AssemblyInfo.cs
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.csproj.CoreCompileInputs.cache
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.dll
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\refint\Script Print.dll
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.pdb
+C:\Users\JaredP\source\repos\Script Print\bin\Debug\net6.0\Script Print.exe
+C:\Users\JaredP\source\repos\Script Print\bin\Debug\net6.0\Script Print.deps.json
+C:\Users\JaredP\source\repos\Script Print\bin\Debug\net6.0\Script Print.runtimeconfig.json
+C:\Users\JaredP\source\repos\Script Print\bin\Debug\net6.0\Script Print.dll
+C:\Users\JaredP\source\repos\Script Print\bin\Debug\net6.0\Script Print.pdb
+C:\Users\JaredP\source\repos\Script Print\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.csproj.CopyComplete
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\Script Print.genruntimeconfig.cache
+C:\Users\JaredP\source\repos\Script Print\obj\Debug\net6.0\ref\Script Print.dll

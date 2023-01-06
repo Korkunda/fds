@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jxmbjS1EUFgvZA1sN4CuRcUNv6kGESkMHaBa4J2eID1HLKLT58XfjDucmxsFt+r0F4hbZ8rWhCx8HyYYKvnYRg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JaredP\\source\\repos\\Script Print\\Script Print.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JaredP\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
