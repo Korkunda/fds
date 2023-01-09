@@ -14,6 +14,11 @@ namespace Script_Print.Characters.Moves
         {
             Moves = new List<Move>();
         }
+
+        public Moveset(List<Move> moves)
+        {
+            Moves = moves;
+        }
         public Moveset(Move move1)
         {
             Moves.Add(move1);
@@ -46,6 +51,10 @@ namespace Script_Print.Characters.Moves
             {
                 Moves.Add(move);
             }
+        }
+        public void SetMoves (List<Move> moves)
+        {
+            Moves = moves;
         }
     }
 }

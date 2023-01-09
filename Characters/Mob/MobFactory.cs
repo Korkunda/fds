@@ -6,43 +6,95 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using Script_Print.Characters.Moves;
+using System.Collections;
+using Script_Print.Utils;
+using Script_Print.Game.Generators;
 
 namespace Script_Print.Characters.Mob
 {
     public static class MobFactory
     {
-        public static Mob FindMob()
+        public static Mob FindMob(string mobName)
+        {
+            string jsonString = File.ReadAllText("C:/Users/JaredP/source/repos/Script Print/Assets/Mobs/Mobs.json");
+
+            JObject json = JObject.Parse(jsonString);
+            
+            bool mobIsFound = false;
+            int i = 0;
+
+
+            foreach (JToken mob in json["Mobs"])
+            {
+                string name = mob["Name"].ToString();
+                if (name.ToLower() == mobName.ToLower())
+                {
+                    mobIsFound = true;
+                    break;
+                }
+                i++;
+            }
+
+            if (mobIsFound)
+            {
+                JToken foundMob = json["Mobs"][i];
+
+                //set stats
+
+                int health = Convert.ToInt32(foundMob["Stats"]["Health"]);
+                int attack = Convert.ToInt32(foundMob["Stats"]["Attack"]);
+                int speed = Convert.ToInt32(foundMob["Stats"]["Speed"]);
+
+                Stats stats = new Stats(health, attack, speed);
+
+                //set moveset
+
+                List<int> moves = new List<int>();
+
+                foreach (var move in foundMob["Moveset"])
+                {
+                    if(move != null)
+                    {
+                        moves.Add(Convert.ToInt32(move));
+                    }
+                }
+
+                Moveset moveset = MoveFactory.GetMoveset(moves);
+
+                Mob mob = new Mob(mobName, stats, moveset);
+                return mob;
+            }
+            else
+            {
+                return new Mob("Unknown", new Stats(1, 1, 1), new Moveset());
+            }
+
+
+        }
+        public static Mob CreateMob(string mobName)
+        {
+            Mob mob = FindMob(mobName);
+            return mob;
+        }
+
+        public static Mob CreateRandomMob()
         {
             string jsonString = File.ReadAllText("C:/Users/JaredP/source/repos/Script Print/Assets/Mobs/Mobs.json");
 
             JObject json = JObject.Parse(jsonString);
 
-            Mob creature = new Mob(name, stats, moveset);
+            JToken MobList = json["Mobs"];
+            
+            var count = MobList.Count();
 
-            Stats mobStats = new Stats(int health, int attack, int speed);     
-
-            foreach(JToken stats in json["Stats"])
-            {
-                int Health = Convert.ToInt32(stats["Health"]);
-                int Attack = Convert.ToInt32(stats["Attack"]);
-                int Speed = Convert.ToInt32(stats["Speed"]);
+            int rnd = RandomGen.Custom(0, count - 1);
 
 
-                mobStats(Stats(Health, Attack, Speed));
-            }
+            string mobName = Convert.ToString(json["Mobs"][rnd]["Name"]);
 
-            foreach(JToken mob in json["Mobs"])
-            {
-                string Name = mob["Name"].ToString();
-            }
+            Mob randomMob = CreateMob(mobName);
 
-            return mobStats;
-        }
-        public static Mob CreateMob(string monster)
-        {
-            Mob Monster = new Mob();
-            Monster.Name = monster;
-            Monster.Stats = ;
+            return randomMob;
 
         }
     }

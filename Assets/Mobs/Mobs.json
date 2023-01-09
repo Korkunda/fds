@@ -3,30 +3,48 @@
     {
       "Name": "Jelly",
       "Stats": {
-        "Health": 5,
+        "Health": 30,
         "Attack": 2,
         "Speed": 1
       },
-      "Moveset": {
-        "Move1": 1,
-        "Move2": null,
-        "Move3": null,
-        "Move4": null
-      }
+      "Moveset": [
+        1
+      ]
     },
     {
       "Name": "Spider",
       "Stats": {
-        "Health": 3,
+        "Health": 30,
         "Attack": 3,
         "Speed": 5
       },
-      "Moveset": {
-        "Move1": 1,
-        "Move2": null,
-        "Move3": null,
-        "Move4": null
-      }
+      "Moveset": [
+        2,
+        3
+      ]
+    },
+    {
+      "Name": "Golem",
+      "Stats": {
+        "Health": 100,
+        "Attack": 15,
+        "Speed": 2
+      },
+      "Moveset": [
+        2,
+        3
+      ]
+    },
+    {
+      "Name": "xQc",
+      "Stats": {
+        "Health": 80,
+        "Attack": 3,
+        "Speed": 5
+      },
+      "Moveset": [
+        1,4,7,8
+      ]
     }
 
   ]

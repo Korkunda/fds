@@ -13,6 +13,9 @@ namespace Script_Print.Characters.Player
         {
 
         }
-
+            public override void BattleInfoDisplay()
+        {
+            DisplayInfo();
+        }
     }
 }

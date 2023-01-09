@@ -7,5 +7,7 @@ namespace Script_Print.Game.BattleEngineComponents
         Moveset PlayerMoveSet { get; set; }
 
         Move SelectMove();
+
+        void SetMoves(Moveset moves);
     }
 }

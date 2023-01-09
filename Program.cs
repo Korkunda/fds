@@ -8,7 +8,11 @@ using Newtonsoft.Json.Linq;
 using Script_Print.Utils;
 
 
-Mob mob = MobFactory.CreateMob("jelly");
+Game game = new Game();
+
+game.Start();
+
+
 
 
 

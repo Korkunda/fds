@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace Script_Print.Game.Events
 {
-    public static class RequestInput
+    public static class UI
     {
         public static string BasicInput(string msg)
         {
-            Console.WriteLine(msg);
             string input;
-
             while (true)
             {
+                Console.WriteLine(msg);
                 input = Console.ReadLine();
 
-                if(input != null && input.Length < 20)
+                if(input.Trim() != "" && input.Length < 20)
                 {
                     break;
                 }
@@ -38,9 +37,9 @@ namespace Script_Print.Game.Events
             {
                 input = Console.ReadLine();
 
-                if (input != null && (Convert.ToInt32(input) >= min && Convert.ToInt32(input) <= max))
+                if (input.Trim() != "" && (Convert.ToInt32(input) >= min && Convert.ToInt32(input) <= max))
                 {
-                    break;
+                    break;  
                 }
                 else
                 {
@@ -49,6 +48,31 @@ namespace Script_Print.Game.Events
             }
 
             return (Convert.ToInt32(input));
+        }
+
+        public static void UsedMoveMsg(string charName, string moveName)
+        {
+            Console.WriteLine($"{charName} used {moveName}!");
+        }
+
+        public static void TookDamage(string charName, int damage)
+        {
+            Console.WriteLine($"{charName} took {damage} damage!");
+        }
+
+        public static void HealedDamage(string charName, int damage)
+        {
+            Console.WriteLine($"{charName} healed {damage} points!");
+        }
+
+        public static void MobAppears(string charName)
+        {
+            Console.WriteLine($"A {charName} appears!");
+        }
+
+        public static void Clear()
+        {
+            Console.Clear();
         }
     }
 }

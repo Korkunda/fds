@@ -22,7 +22,14 @@ namespace Script_Print.Game.BattleEngineComponents
 
         public Move SelectMove()
         {
-            return PlayerMoveSet.Moves.ElementAt((RandomGen.Custom(1, 4))-1);
+
+            return PlayerMoveSet.Moves.ElementAt((RandomGen.Custom(0, PlayerMoveSet.Moves.Count-1)));
         }
+        public void SetMoves(Moveset playerMoveset)
+        {
+            PlayerMoveSet = playerMoveset;
+
+        }
+
     }
 }

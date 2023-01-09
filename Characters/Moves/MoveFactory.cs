@@ -14,7 +14,7 @@ namespace Script_Print.Utils
     public static class MoveFactory
     {
 
-        public static Moveset GetMoveset(int[] moveIds)
+        public static Moveset GetMoveset(List<int> moveIds)
         {
             
             Moveset moveset = new Moveset();

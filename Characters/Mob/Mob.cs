@@ -17,5 +17,11 @@ namespace Script_Print.Characters.Mob
         {
 
         }
+
+        
+        public override void BattleInfoDisplay()
+        {
+            Console.WriteLine($"Name: {Name}; Health: {Stats.Health}");
+        }
     }
 }

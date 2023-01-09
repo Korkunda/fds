@@ -40,5 +40,12 @@ namespace Script_Print.Characters
         {
             Health += heal;
         }
+
+        public void ResetStats()
+        {
+            Health = BaseHealth;
+            Attack = BaseAttack;
+            Speed = BaseSpeed;
+        }
     }
 }

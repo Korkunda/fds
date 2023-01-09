@@ -20,6 +20,48 @@
       "Type": "attack",
       "Damage": 2,
       "Accuracy": 100
+    },
+    {
+      "Id": 4,
+      "Name": "Annihilate",
+      "Type": "attack",
+      "Damage": 10,
+      "Accuracy": 40
+    },
+    {
+      "Id": 5,
+      "Name": "Ice beam",
+      "Type": "attack",
+      "Damage": 5,
+      "Accuracy": 95
+    },
+    {
+      "Id": 6,
+      "Name": "Soco no Estomago",
+      "Type": "attack",
+      "Damage": 6,
+      "Accuracy": 70
+    },
+    {
+      "Id": 7,
+      "Name": "Watch TitToks",
+      "Type": "heal",
+      "Damage": -2,
+      "Accuracy": 100
+    },
+    {
+      "Id": 8,
+      "Name": "Drink Coke",
+      "Type": "heal",
+      "Damage": 6,
+      "Accuracy": 100
+    },
+    {
+      "Id": 9,
+      "Name": "Arm Slam",
+      "Type": "heal",
+      "Damage": 8,
+      "Accuracy": 100
     }
   ]
 }

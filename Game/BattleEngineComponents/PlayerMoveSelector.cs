@@ -26,8 +26,14 @@ namespace Script_Print.Game.BattleEngineComponents
             {
                 Console.WriteLine($"{i} {PlayerMoveSet.Moves[i]}");
             }
-            int input = RequestInput.MinMaxRangeInput("", 1, 4);
+            int input = UI.MinMaxRangeInput("", 1, 4);
             return PlayerMoveSet.Moves.ElementAt(input - 1);
         }
+        public void SetMoves(Moveset playerMoveset)
+        {
+            PlayerMoveSet = playerMoveset;
+
+        }
+
     }
 }

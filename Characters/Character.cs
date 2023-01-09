@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Script_Print.Characters
 {
-    public class Character
+    public abstract class Character
     {
         private string Id { get; set; } = Guid.NewGuid().ToString();
 
@@ -15,7 +15,7 @@ namespace Script_Print.Characters
 
         public Stats Stats { get; set; }
 
-        public Moveset Moves;
+        public Moveset Moveset;
 
         public Character(Stats stats)
         {
@@ -26,13 +26,21 @@ namespace Script_Print.Characters
         {
             Name = name;
             Stats = stats;
-            Moves = moves;
+            Moveset = moves;
         }
 
         public void DisplayInfo()
         {
-            Console.WriteLine($"Name: {Name}; Id: {Id}\n-----Stats-----\nHealth: {Stats.Health}\nAttack: {Stats.Attack}\nSpeed: {Stats.Speed}");
+            Console.WriteLine($"\nName: {Name}\n-----Stats-----\nHealth: {Stats.Health}\nAttack: {Stats.Attack}\nSpeed: {Stats.Speed}"+
+            "\n\n-----Moveset-----");
+            foreach(var item in Moveset.Moves)
+            {
+                Console.WriteLine(item.Name);
+            }
+            Console.WriteLine();
         }
+
+        public abstract void BattleInfoDisplay();
 
     }
 }
